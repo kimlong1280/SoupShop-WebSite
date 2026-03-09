@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="km">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sreyKeo1 Coffee & Soup</title>
-    <!-- link css -->
-    <link rel="stylesheet" href="/sreyKeo1/css/style.css">
-    <link rel="stylesheet" href="/sreyKeo1/css/home.css">
+    <!-- Google Fonts: Khmer fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moul&display=swap" rel="stylesheet">
+    <!-- CSS (relative paths - no leading slash) -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
   </head>
-  <body style="background:rgb(233, 233, 233);">
-    <!-- header -->
-     <!-- navbar -->
+  <body>
+    <!-- Navbar -->
     <header class="navbar" role="banner">
       <div class="navbar__container">
-        <a href="#" class="navbar__brand">sreyKeo1 Coffee & Soup</a>
+        <a href="#" class="navbar__brand">SreyKeo Coffee & Soup</a>
 
-        <!-- 
-                This button controls the mobile navigation menu.
-                - `aria-label` describes the button to screen readers.
-                - `aria-controls` points to the ID of the menu it controls.
-                - `aria-expanded` tells screen readers if the menu is open or closed.
-            -->
         <button
           class="navbar__toggle"
           id="navbarToggle"
@@ -41,356 +38,332 @@
         >
           <ul class="navbar__list">
             <li class="navbar__item">
-              <a href="/sreyKeo1/index.html" class="navbar__link">ស៊ុប និង សាច់អាំង   </a>
+              <a href="index.html" class="navbar__link">ស៊ុប និង សាច់អាំង</a>
             </li>
             <li class="navbar__item">
-              <a href="/sreyKeo1/html/rice-and-other.html" class="navbar__link">បាយ & ផ្សេងៗ</a>
+              <a href="html/rice-and-other.html" class="navbar__link">បាយ & ផ្សេងៗ</a>
             </li>
             <li class="navbar__item">
-              <a href="/sreyKeo1/html/drink.html" class="navbar__link">ភេសជ្ជៈ</a>
+              <a href="html/drink.html" class="navbar__link">ភេសជ្ជៈ</a>
             </li>
             <li class="navbar__item">
-              <a href="/sreyKeo1/html/beers.html" class="navbar__link">ស្រាបៀរ</a>
+              <a href="html/beers.html" class="navbar__link">ស្រាបៀរ</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
-        <div class="contianer">
-          <div class="content">
-            <div class="soup_label">ស៊ុប</div>
-              <section class="prod-showcase-hero">
-                    <div class="prod-showcase-hero-container"> 
-                        <figure class="prod-showcase-hero-image-wrapper">
-                            <!-- 
-                                Image by Artiom Vallat from Unsplash. 
-                                Using a direct link for demonstration. For production, host your own image.
-                            -->
-                            <img class="prod-showcase-hero-image" 
-                                src="/sreyKeo1/images/soup-removebg-preview.png" 
-                                alt="A modern, silver and black wristwatch displayed on a white surface.">
-                        </figure>
-                        <div class="prod-showcase-hero-content">
-                            <h1 class="prod-showcase-hero-title">ស៊ុបសុីឈាន់​ ឈុតធំ និង ឈុតតូច</h1>
-                            <p class="prod-showcase-hero-price">តម្លៃ : 15000រៀល , 30000រៀល និង​ 50000​​​​រៀល</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- card soup -->
-                 <!-- Place the following HTML in your <body> -->
-                  <div class="cards-grid-container">
-                    <!-- Product 1 -->
-                    <article class="pdc-card">
-                      <a href="#" class="pdc-card-link">
-                        <div class="pdc-card-image-container">
-                          <!-- Image by placehold.co. Replace with your own. -->
-                          <img
-                            src="/sreyKeo1/images/soup15000.png"
-                            alt="Stylish waterproof jacket."
-                            class="pdc-card-image"
-                          />
-                        </div>
-                        <div class="pdc-card-content">
-                          <span class="pdc-card-category">ស៊ុបសុីឈាន់</span>
-                          <h3 class="pdc-card-title">តម្លៃ​ : 15000រៀល</h3>
-                          <p>មានបន្លែមួយឈុត និង​ សាច់មួយឈុត​ </p>
-                        </div>
-                      </a>
-                    </article>
+      <div class="contianer">
+        <div class="content">
 
-                    <!-- Product 2 -->
-                    <article class="pdc-card">
-                      <a href="#" class="pdc-card-link">
-                        <div class="pdc-card-image-container">
-                          <!-- Image by placehold.co. Replace with your own. -->
-                          <img
-                            src="/sreyKeo1/images/soup30000.png"
-                            alt="Durable travel backpack."
-                            class="pdc-card-image"
-                          />
-                        </div>
-                        <div class="pdc-card-content">
-                          <span class="pdc-card-category">ស៊ុបសុីឈាន់​</span>
-                          <h3 class="pdc-card-title">តម្លៃ​ : 30000រៀល</h3>
-                          <p>មានបន្លែមួយឈុត​ មាន់ខ្មៅx5  សាច់រុំផ្សិតx5 ឈាមទានិងពេាះគោ​ និង ប្រហិតx8</p>
-                        </div>
-                      </a>
-                    </article>
+          <!-- ===== ស៊ុប Section ===== -->
+          <div class="soup_label">ស៊ុប</div>
 
-                    <!-- Product 3 -->
-                    <article class="pdc-card">
-                      <a href="#" class="pdc-card-link">
-                        <div class="pdc-card-image-container">
-                          <!-- Image by placehold.co. Replace with your own. -->
-                          <img
-                            src="/sreyKeo1/images/soup50000.png"
-                            alt="Leather hiking boots."
-                            class="pdc-card-image"
-                          />
-                        </div>
-                        <div class="pdc-card-content">
-                          <span class="pdc-card-category">ស៊ុបសុីឈាន់</span>
-                          <h3 class="pdc-card-title">តម្លៃ​ : 50000រៀល</h3>
-                          <p>មានបន្លែមួយឈុត​ មាន់ខ្មៅx6 ឈាមទានិងពេាះគោ សាច់រុំផ្សិតx6​ បង្គារx6 សាច់គោx6 និង ប្រហិតx8</p>
-                        </div>
-                      </a>
-                    </article>
-                  </div>
-                <!-- BBq -->
-                 <div class="soup_label">សាច់អាំង</div>
-                 <section class="prod-showcase-hero">
-                    <div class="prod-showcase-hero-container reverse"> 
-                        <figure class="prod-showcase-hero-image-wrapper">
-                            <!-- 
-                                Image by Artiom Vallat from Unsplash. 
-                                Using a direct link for demonstration. For production, host your own image.
-                            -->
-                            <img class="prod-showcase-hero-image" 
-                                src="/sreyKeo1/images/bbq.png" 
-                                alt="A modern, silver and black wristwatch displayed on a white surface.">
-                        </figure>
-                        <div class="prod-showcase-hero-content">
-                            <h1 class="prod-showcase-hero-title">សាច់អាំង​ ឈុតធំ និង ឈុតតូច</h1>
-                            <p class="prod-showcase-hero-price">តម្លៃ : 35000រៀល និង​ 50000​​​​រៀល</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- card soup -->
-                 <!-- Place the following HTML in your <body> -->
-                  <div class="cards-grid-container">
-                    <!-- Product 1 -->
-                    <article class="pdc-card">
-                      <a href="#" class="pdc-card-link">
-                        <div class="pdc-card-image-container">
-                          <!-- Image by placehold.co. Replace with your own. -->
-                          <img
-                            src="/sreyKeo1/images/BBQ35000.png"
-                            alt="Stylish waterproof jacket."
-                            class="pdc-card-image"
-                          />
-                        </div>
-                        <div class="pdc-card-content">
-                          <span class="pdc-card-category">សាច់អាំង</span>
-                          <h3 class="pdc-card-title">តម្លៃ​ : 35000រៀល</h3>
-                          <p>មានបន្លែមួយឈុត បង្គារx4 សាច់គោx5 មាន់ខ្មៅx5 និងសាច់រុំផ្សិតx5 </p>
-                        </div>
-                      </a>
-                    </article>
+          <section class="prod-showcase-hero reveal">
+            <div class="prod-showcase-hero-container">
+              <figure class="prod-showcase-hero-image-wrapper">
+                <img class="prod-showcase-hero-image"
+                  src="images/soup-removebg-preview.png"
+                  alt="ស៊ុបសុីឈាន់">
+              </figure>
+              <div class="prod-showcase-hero-content">
+                <h1 class="prod-showcase-hero-title">ស៊ុបសុីឈាន់​ ឈុតធំ និង ឈុតតូច</h1>
+                <p class="prod-showcase-hero-price">តម្លៃ : 15000រៀល , 30000រៀល និង​ 50000​​​​រៀល</p>
+              </div>
+            </div>
+          </section>
 
-                    <!-- Product 2 -->
-                    <article class="pdc-card">
-                      <a href="#" class="pdc-card-link">
-                        <div class="pdc-card-image-container">
-                          <!-- Image by placehold.co. Replace with your own. -->
-                          <img
-                            src="/sreyKeo1/images/BBQ50000.png"
-                            alt="Durable travel backpack."
-                            class="pdc-card-image"
-                          />
-                        </div>
-                        <div class="pdc-card-content">
-                          <span class="pdc-card-category">សាច់អាំង​</span>
-                          <h3 class="pdc-card-title">តម្លៃ​ : 50000រៀល</h3>
-                          <p>មានបន្លែមួយឈុត បង្គារx6 សាច់គោx6 មាន់ខ្មៅx12  និងសាច់រុំផ្សិតx6</p>
-                        </div>
-                      </a>
-                    </article>
+          <div class="cards-grid-container">
+            <article class="pdc-card">
+              <a href="#" class="pdc-card-link">
+                <div class="pdc-card-image-container">
+                  <img src="images/soup15000.png" alt="ស៊ុបសុីឈាន់ 15000រៀល" class="pdc-card-image" />
+                </div>
+                <div class="pdc-card-content">
+                  <span class="pdc-card-category">ស៊ុបសុីឈាន់</span>
+                  <h3 class="pdc-card-title">តម្លៃ​ : 15000រៀល</h3>
+                  <p>មានបន្លែមួយឈុត និង​ សាច់មួយឈុត​</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="pdc-card">
+              <a href="#" class="pdc-card-link">
+                <div class="pdc-card-image-container">
+                  <img src="images/soup30000.png" alt="ស៊ុបសុីឈាន់ 30000រៀល" class="pdc-card-image" />
+                </div>
+                <div class="pdc-card-content">
+                  <span class="pdc-card-category">ស៊ុបសុីឈាន់​</span>
+                  <h3 class="pdc-card-title">តម្លៃ​ : 30000រៀល</h3>
+                  <p>មានបន្លែមួយឈុត​ មាន់ខ្មៅx5 សាច់រុំផ្សិតx5 ឈាមទានិងពេាះគោ​ និង ប្រហិតx8</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="pdc-card">
+              <a href="#" class="pdc-card-link">
+                <div class="pdc-card-image-container">
+                  <img src="images/soup50000.png" alt="ស៊ុបសុីឈាន់ 50000រៀល" class="pdc-card-image" />
+                </div>
+                <div class="pdc-card-content">
+                  <span class="pdc-card-category">ស៊ុបសុីឈាន់</span>
+                  <h3 class="pdc-card-title">តម្លៃ​ : 50000រៀល</h3>
+                  <p>មានបន្លែមួយឈុត​ មាន់ខ្មៅx6 ឈាមទានិងពេាះគោ សាច់រុំផ្សិតx6​ បង្គារx6 សាច់គោx6 និង ប្រហិតx8</p>
+                </div>
+              </a>
+            </article>
           </div>
-          <!-- vegetable and meats -->
-           <div class="soup_label">បន្លែ និង សាច់</div>
-           <!-- Place the following HTML in your <body> -->
+
+          <!-- ===== សាច់អាំង Section ===== -->
+          <div class="soup_label">សាច់អាំង</div>
+
+          <section class="prod-showcase-hero reveal">
+            <div class="prod-showcase-hero-container reverse">
+              <figure class="prod-showcase-hero-image-wrapper">
+                <img class="prod-showcase-hero-image"
+                  src="images/bbq.png"
+                  alt="សាច់អាំង">
+              </figure>
+              <div class="prod-showcase-hero-content">
+                <h1 class="prod-showcase-hero-title">សាច់អាំង​ ឈុតធំ និង ឈុតតូច</h1>
+                <p class="prod-showcase-hero-price">តម្លៃ : 35000រៀល និង​ 50000​​​​រៀល</p>
+              </div>
+            </div>
+          </section>
+
+          <div class="cards-grid-container">
+            <article class="pdc-card">
+              <a href="#" class="pdc-card-link">
+                <div class="pdc-card-image-container">
+                  <img src="images/BBQ35000.png" alt="សាច់អាំង 35000រៀល" class="pdc-card-image" />
+                </div>
+                <div class="pdc-card-content">
+                  <span class="pdc-card-category">សាច់អាំង</span>
+                  <h3 class="pdc-card-title">តម្លៃ​ : 35000រៀល</h3>
+                  <p>មានបន្លែមួយឈុត បង្គារx4 សាច់គោx5 មាន់ខ្មៅx5 និងសាច់រុំផ្សិតx5</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="pdc-card">
+              <a href="#" class="pdc-card-link">
+                <div class="pdc-card-image-container">
+                  <img src="images/BBQ50000.png" alt="សាច់អាំង 50000រៀល" class="pdc-card-image" />
+                </div>
+                <div class="pdc-card-content">
+                  <span class="pdc-card-category">សាច់អាំង​</span>
+                  <h3 class="pdc-card-title">តម្លៃ​ : 50000រៀល</h3>
+                  <p>មានបន្លែមួយឈុត បង្គារx6 សាច់គោx6 មាន់ខ្មៅx12 និងសាច់រុំផ្សិតx6</p>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <!-- ===== បន្លែ និង សាច់ Section ===== -->
+          <div class="soup_label">បន្លែ និង សាច់</div>
+
           <div class="list-view-container">
+            <article class="hp-card reveal">
+              <div class="hp-card-image-wrapper">
+                <img src="images/vegetable.png" alt="ឈុតបន្លែ" class="hp-card-image">
+              </div>
+              <div class="hp-card-content">
+                <div class="hp-card-main-info">
+                  <a href="#" class="hp-card-title-link">
+                    <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
+                    <h3 class="hp-card-title">ឈុតបន្លែ</h3>
+                  </a>
+                </div>
+                <footer class="hp-card-footer">
+                  <span class="hp-card-price">8000 រៀល និង​ 10000 រៀល</span>
+                </footer>
+              </div>
+            </article>
 
-              <!-- Card 1 -->
-              <article class="hp-card">
-                  <div class="hp-card-image-wrapper">
-                      <!-- Image by placehold.co. Replace with your own. -->
-                      <img src="/sreyKeo1/images/vegetable.png" alt="A modern smartwatch with a dark strap." class="hp-card-image">
-                  </div>
-                  <div class="hp-card-content">
-                      <div class="hp-card-main-info">
-                          <a href="#" class="hp-card-title-link">
-                              <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
-                              <h3 class="hp-card-title">ឈុតបន្លែ</h3>
-                          </a>
-                      </div>
-                      <footer class="hp-card-footer">
-                          <span class="hp-card-price">8000 រៀល និង​ 10000 រៀល</span>
-                      </footer> 
-                  </div>
-              </article>
+            <article class="hp-card reveal">
+              <div class="hp-card-image-wrapper">
+                <img src="images/meetRollMr.jpg" alt="សាច់រុំផ្សិត" class="hp-card-image">
+              </div>
+              <div class="hp-card-content">
+                <div class="hp-card-main-info">
+                  <a href="#" class="hp-card-title-link">
+                    <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
+                    <h3 class="hp-card-title">សាច់រុំផ្សិត</h3>
+                  </a>
+                </div>
+                <footer class="hp-card-footer">
+                  <span class="hp-card-price">6000 រៀល</span>
+                </footer>
+              </div>
+            </article>
 
-              <!-- Card 2 -->
-              <article class="hp-card">
-                  <div class="hp-card-image-wrapper">
-                      <!-- Image by placehold.co. Replace with your own. -->
-                      <img src="/sreyKeo1/images/meetRollMr.jpg" alt="A mechanical gaming keyboard with RGB lighting." class="hp-card-image">
-                  </div>
-                  <div class="hp-card-content">
-                      <div class="hp-card-main-info">
-                          <a href="#" class="hp-card-title-link">
-                              <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
-                              <h3 class="hp-card-title">សាច់រុំផ្សិត</h3>
-                              
-                          </a>
-                      </div>
-                      <footer class="hp-card-footer">
-                          <span class="hp-card-price">6000 រៀល</span>
-                      </footer>
-                  </div>
-              </article>
-              <!-- Card 3 -->
-              <article class="hp-card">
-                  <div class="hp-card-image-wrapper">
-                      <!-- Image by placehold.co. Replace with your own. -->
-                      <img src="/sreyKeo1/images/blackChicken (2).png" alt="A modern smartwatch with a dark strap." class="hp-card-image">
-                  </div>
-                  <div class="hp-card-content">
-                      <div class="hp-card-main-info">
-                          <a href="#" class="hp-card-title-link">
-                              <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
-                              <h3 class="hp-card-title">មាន់ខ្មៅ</h3>
-                          </a>
-                      </div>
-                      <footer class="hp-card-footer">
-                          <span class="hp-card-price">5000 រៀល</span>
-                      </footer> 
-                  </div>
-              </article>
+            <article class="hp-card reveal">
+              <div class="hp-card-image-wrapper">
+                <img src="images/blackChicken (2).png" alt="មាន់ខ្មៅ" class="hp-card-image">
+              </div>
+              <div class="hp-card-content">
+                <div class="hp-card-main-info">
+                  <a href="#" class="hp-card-title-link">
+                    <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
+                    <h3 class="hp-card-title">មាន់ខ្មៅ</h3>
+                  </a>
+                </div>
+                <footer class="hp-card-footer">
+                  <span class="hp-card-price">5000 រៀល</span>
+                </footer>
+              </div>
+            </article>
 
-              <!-- Card 4 -->
-              <article class="hp-card">
-                  <div class="hp-card-image-wrapper">
-                      <!-- Image by placehold.co. Replace with your own. -->
-                      <img src="/sreyKeo1/images/shrim.jpg" alt="A mechanical gaming keyboard with RGB lighting." class="hp-card-image">
-                  </div>
-                  <div class="hp-card-content">
-                      <div class="hp-card-main-info">
-                          <a href="#" class="hp-card-title-link">
-                              <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
-                              <h3 class="hp-card-title">បង្គារ</h3>
-                              
-                          </a>
-                      </div>
-                      <footer class="hp-card-footer">
-                          <span class="hp-card-price">6000 រៀល</span>
-                      </footer>
-                  </div>
-              </article>
-              <!-- Card 5 -->
-              <article class="hp-card">
-                  <div class="hp-card-image-wrapper">
-                      <!-- Image by placehold.co. Replace with your own. -->
-                      <img src="/sreyKeo1/images/squid.jpg" alt="A modern smartwatch with a dark strap." class="hp-card-image">
-                  </div>
-                  <div class="hp-card-content">
-                      <div class="hp-card-main-info">
-                          <a href="#" class="hp-card-title-link">
-                              <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
-                              <h3 class="hp-card-title">មឹក</h3>
-                          </a>
-                      </div>
-                      <footer class="hp-card-footer">
-                          <span class="hp-card-price">8000 រៀល</span>
-                      </footer> 
-                  </div>
-              </article>
+            <article class="hp-card reveal">
+              <div class="hp-card-image-wrapper">
+                <img src="images/shrim.jpg" alt="បង្គារ" class="hp-card-image">
+              </div>
+              <div class="hp-card-content">
+                <div class="hp-card-main-info">
+                  <a href="#" class="hp-card-title-link">
+                    <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
+                    <h3 class="hp-card-title">បង្គារ</h3>
+                  </a>
+                </div>
+                <footer class="hp-card-footer">
+                  <span class="hp-card-price">6000 រៀល</span>
+                </footer>
+              </div>
+            </article>
 
-              <!-- Card 6 -->
-              <article class="hp-card">
-                  <div class="hp-card-image-wrapper">
-                      <!-- Image by placehold.co. Replace with your own. -->
-                      <img src="/sreyKeo1/images/cheamDuck.jpg" alt="A mechanical gaming keyboard with RGB lighting." class="hp-card-image">
-                  </div>
-                  <div class="hp-card-content">
-                      <div class="hp-card-main-info">
-                          <a href="#" class="hp-card-title-link">
-                              <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
-                              <h3 class="hp-card-title">ឈាមទានិងពេាះគោ</h3>
-                              
-                          </a>
-                      </div>
-                      <footer class="hp-card-footer">
-                          <span class="hp-card-price">5000 រៀល</span>
-                      </footer>
-                  </div>
-              </article>
-              <!-- Card 7 -->
-              <article class="hp-card">
-                  <div class="hp-card-image-wrapper">
-                      <!-- Image by placehold.co. Replace with your own. -->
-                      <img src="/sreyKeo1/images/beefMeat.jpg" alt="A mechanical gaming keyboard with RGB lighting." class="hp-card-image">
-                  </div>
-                  <div class="hp-card-content">
-                      <div class="hp-card-main-info">
-                          <a href="#" class="hp-card-title-link">
-                              <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
-                              <h3 class="hp-card-title">សាច់គោ</h3>
-                              
-                          </a>
-                      </div>
-                      <footer class="hp-card-footer">
-                          <span class="hp-card-price">5000 រៀល</span>
-                      </footer>
-                  </div>
-              </article>
+            <article class="hp-card reveal">
+              <div class="hp-card-image-wrapper">
+                <img src="images/squid.jpg" alt="មឹក" class="hp-card-image">
+              </div>
+              <div class="hp-card-content">
+                <div class="hp-card-main-info">
+                  <a href="#" class="hp-card-title-link">
+                    <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
+                    <h3 class="hp-card-title">មឹក</h3>
+                  </a>
+                </div>
+                <footer class="hp-card-footer">
+                  <span class="hp-card-price">8000 រៀល</span>
+                </footer>
+              </div>
+            </article>
 
+            <article class="hp-card reveal">
+              <div class="hp-card-image-wrapper">
+                <img src="images/cheamDuck.jpg" alt="ឈាមទានិងពេាះគោ" class="hp-card-image">
+              </div>
+              <div class="hp-card-content">
+                <div class="hp-card-main-info">
+                  <a href="#" class="hp-card-title-link">
+                    <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
+                    <h3 class="hp-card-title">ឈាមទានិងពេាះគោ</h3>
+                  </a>
+                </div>
+                <footer class="hp-card-footer">
+                  <span class="hp-card-price">5000 រៀល</span>
+                </footer>
+              </div>
+            </article>
+
+            <article class="hp-card reveal">
+              <div class="hp-card-image-wrapper">
+                <img src="images/beefMeat.jpg" alt="សាច់គោ" class="hp-card-image">
+              </div>
+              <div class="hp-card-content">
+                <div class="hp-card-main-info">
+                  <a href="#" class="hp-card-title-link">
+                    <div class="hp-card-category">បន្លែ និង​ សាច់ថែម</div>
+                    <h3 class="hp-card-title">សាច់គោ</h3>
+                  </a>
+                </div>
+                <footer class="hp-card-footer">
+                  <span class="hp-card-price">5000 រៀល</span>
+                </footer>
+              </div>
+            </article>
           </div>
+
+        </div>
       </div>
     </main>
-    <!-- footer -->
-     <footer class="footer-local" role="contentinfo">
-        <div class="container">
-            <div class="footer-local__main">
-                <div class="footer-local__details">
-                    <h3>sreyKeo1 Coffee and Soup</h3>
-                    <p>
-                        <strong>Phone:</strong> <a href="tel:+85590722238">(+855)90722238</a><br>
-                        <strong>Email:</strong> <a href="mailto:nuncah592@gmail.com">nuncah592@gmail.com</a>
-                    </p>
-                    <ul class="footer-local__hours-list">
-                        <li><span>Monday-Sunday</span> <span>7am - 11pm</span></li>
-                    </ul>
-                </div>
-                <div class="footer-local__map">
-                    <!-- Replace this with your own Google Maps embed code -->
-                
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.3286810075895!2d105.58716006955427!3d12.361838299243782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310db2a5de7f375d%3A0x50bc200cdd136450!2sPreak%20Kak!5e0!3m2!1sen!2skh!4v1767805465113!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            loading="lazy"
-                            aria-label="Google map showing location of our cafe">
-                    ></iframe>
-                </div>
-            </div>
-            <div class="footer-local__bottom">
-                <p class="footer-local__copyright">ទីតាំង: ភូមិបែកអន្លូង ឃុំអារក្សត្នោត ស្រុកស្ទឺងត្រង់ ខេត្តកំពង់ចាម</p>
-                <nav class="footer-local__social" aria-label="Social media">
-                    <ul>
-                        <li><a href="https://www.facebook.com/share/1FQQsLu9Hw/?mibextid=wwXIfr" aria-label="Our Facebook Page"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.35C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a></li>
-                        <li><a href="https://www.instagram.com/__bee_lzz?igsh=dWNoZGRyZ25kNHl1" aria-label="Our Instagram Profile"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.784.297-1.459.717-2.126 1.384S.926 3.356.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.297.784.717 1.459 1.384 2.126.667.666 1.342 1.089 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.784-.297 1.459-.718 2.126-1.384.666-.667 1.089-1.342 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.148-.558-2.913-.297-.784-.718-1.459-1.384-2.126C21.314 1.64 20.64 1.217 19.856.92c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.056 1.17-.249 1.805-.413 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.585-.015-4.85-.074c-1.17-.056-1.805-.249-2.227-.413-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.015-3.585.074-4.85c.056-1.17.249-1.805.413-2.227.217.562.477.96.896-1.382.42-.419.819.679 1.381-.896.422-.164 1.057.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a></li>
-                    </ul>
-                </nav>
-            </div>
+
+    <!-- Footer -->
+    <footer class="footer-local" role="contentinfo">
+      <div class="container">
+        <div class="footer-local__main">
+          <div class="footer-local__details">
+            <h3>sreyKeo1 Coffee and Soup</h3>
+            <p>
+              <strong>Phone:</strong> <a href="tel:+85590722238">(+855) 90722238</a><br>
+              <strong>Email:</strong> <a href="mailto:sreykeo1@gmail.com">sreykeo1@gmail.com</a>
+            </p>
+            <ul class="footer-local__hours-list">
+              <li><span>Monday–Sunday</span><span>7am – 11pm</span></li>
+            </ul>
+          </div>
+          <div class="footer-local__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.3286810075895!2d105.58716006955427!3d12.361838299243782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310db2a5de7f375d%3A0x50bc200cdd136450!2sPreak%20Kak!5e0!3m2!1sen!2skh!4v1767805465113!5m2!1sen!2skh"
+              width="600" height="350"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-label="Google map showing location of our cafe">
+            </iframe>
+          </div>
         </div>
+        <div class="footer-local__bottom">
+          <p class="footer-local__copyright">ទីតាំង: ភូមិបែកអន្លូង ឃុំអារក្សត្នោត ស្រុកស្ទឺងត្រង់ ខេត្តកំពង់ចាម</p>
+          <nav class="footer-local__social" aria-label="Social media">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/share/1FQQsLu9Hw/?mibextid=wwXIfr" aria-label="Facebook">
+                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.35C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.732 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/__bee_lzz?igsh=dWNoZGRyZ25kNHl1" aria-label="Instagram">
+                  <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.784.297-1.459.717-2.126 1.384S.926 3.356.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.297.784.717 1.459 1.384 2.126.667.666 1.342 1.089 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.784-.297 1.459-.718 2.126-1.384.666-.667 1.089-1.342 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.148-.558-2.913-.297-.784-.718-1.459-1.384-2.126C21.314 1.64 20.64 1.217 19.856.92c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.056 1.17-.249 1.805-.413 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.585-.015-4.85-.074c-1.17-.056-1.805-.249-2.227-.413-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.015-3.585.074-4.85c.056-1.17.249-1.805.413-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </footer>
 
     <script>
-      // A small, accessible script to toggle the mobile menu.
+      // Mobile nav toggle
       document.addEventListener("DOMContentLoaded", function () {
         const navbarToggle = document.getElementById("navbarToggle");
-        const navbarMenu = document.getElementById("navbarMenu");
+        const navbarMenu  = document.getElementById("navbarMenu");
 
         if (navbarToggle && navbarMenu) {
           navbarToggle.addEventListener("click", function () {
-            // Toggle the .is-active class on both the toggle and the menu
             navbarToggle.classList.toggle("is-active");
             navbarMenu.classList.toggle("is-active");
-
-            // Update the aria-expanded attribute
-            const isExpanded =
-              navbarToggle.getAttribute("aria-expanded") === "true";
+            const isExpanded = navbarToggle.getAttribute("aria-expanded") === "true";
             navbarToggle.setAttribute("aria-expanded", !isExpanded);
           });
+        }
+
+        // Scroll-reveal: adds .is-visible when element enters viewport
+        const revealEls = document.querySelectorAll('.reveal, .pdc-card, .hp-card');
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+          revealEls.forEach(el => observer.observe(el));
+        } else {
+          revealEls.forEach(el => el.classList.add('is-visible'));
         }
       });
     </script>
