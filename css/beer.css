@@ -1,0 +1,265 @@
+/* ========================================
+   beer.css — Requires: style.css first
+   ======================================== */
+
+/* ========================================
+   Keyframes — Rich Variety
+   ======================================== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeLeft {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeRight {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes flipUp {
+  from { opacity: 0; transform: perspective(600px) rotateX(30deg) translateY(20px); }
+  to   { opacity: 1; transform: perspective(600px) rotateX(0deg) translateY(0); }
+}
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes labelPulse {
+  0%, 100% { box-shadow: 4px 0 0 0 #ffcb83; }
+  50%       { box-shadow: 7px 0 0 0 #f5c842; }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ========================================
+   Page Wrapper
+   ======================================== */
+* { padding: 0; margin: 0; box-sizing: border-box; }
+body { background-color: #fdf6ed; }
+
+main {
+  max-width: 1200px;
+  margin: 80px auto 2rem;
+  padding: 0 0.75rem;
+}
+
+/* ========================================
+   Section Label
+   ======================================== */
+.soup_label {
+  font-family: var(--font-khmer-display, 'Moul', serif);
+  color: #fff;
+  padding: 0.35rem 1rem;
+  border-left: 6px solid #ffcb83;
+  font-size: 1.05rem;
+  line-height: 2.4;
+  background: linear-gradient(to right, #e8820c 0%, #f39c12 45%, rgba(253,246,237,0) 100%);
+  border-radius: 0 6px 6px 0;
+  margin: 1.25rem 0 0.5rem 0;
+  display: inline-block;
+  min-width: 160px;
+  animation: labelPulse 3s ease infinite, slideInLeft 0.5s ease both;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.soup_label::before {
+  content: '✦';
+  margin-right: 0.4rem;
+  color: #f5c842;
+  font-size: 0.75em;
+  vertical-align: middle;
+}
+
+/* ========================================
+   Info Banner
+   ======================================== */
+.label2 {
+  font-family: var(--font-khmer-body, 'Kantumruy Pro', sans-serif);
+  background: linear-gradient(135deg, #fff8ee, #fff3e0);
+  border: 1px solid #f5ddb0;
+  border-left: 4px solid #f39c12;
+  border-radius: 0 8px 8px 0;
+  padding: 0.55rem 1rem;
+  margin: 0 0 0.9rem 0;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  animation: fadeDown 0.6s ease both 0.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.label2 p {
+  font-size: 0.82rem;
+  color: #5c3d1e;
+  line-height: 1.9;
+  margin: 0;
+}
+.label2 p::before {
+  content: '• ';
+  color: #e8820c;
+  font-weight: 700;
+}
+
+/* ========================================
+   Card Grid
+   ======================================== */
+.list-view-container {
+  max-width: 900px;
+  margin: 0.5rem auto 1.5rem;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+/* ========================================
+   Horizontal Card
+   ======================================== */
+.hp-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(180,100,20,0.08);
+  border: 1px solid #f5e8d0;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.25s ease;
+
+  /* Default hidden state for scroll-reveal */
+  opacity: 0;
+}
+
+/* ── Varied entrance animations by position ── */
+.hp-card:nth-child(3n+1) { animation: fadeUp    0.6s ease both; }
+.hp-card:nth-child(3n+2) { animation: fadeLeft  0.6s ease both; }
+.hp-card:nth-child(3n+3) { animation: flipUp    0.65s ease both; }
+
+/* Staggered delays */
+.hp-card:nth-child(1)  { animation-delay: 0.05s; }
+.hp-card:nth-child(2)  { animation-delay: 0.12s; }
+.hp-card:nth-child(3)  { animation-delay: 0.19s; }
+.hp-card:nth-child(4)  { animation-delay: 0.05s; }
+.hp-card:nth-child(5)  { animation-delay: 0.12s; }
+.hp-card:nth-child(6)  { animation-delay: 0.19s; }
+.hp-card:nth-child(7)  { animation-delay: 0.05s; }
+.hp-card:nth-child(8)  { animation-delay: 0.12s; }
+.hp-card:nth-child(9)  { animation-delay: 0.19s; }
+.hp-card:nth-child(10) { animation-delay: 0.05s; }
+.hp-card:nth-child(11) { animation-delay: 0.12s; }
+.hp-card:nth-child(12) { animation-delay: 0.19s; }
+.hp-card:nth-child(13) { animation-delay: 0.05s; }
+.hp-card:nth-child(14) { animation-delay: 0.12s; }
+
+/* Scroll-reveal: cards only animate when .is-visible is added by JS */
+.hp-card:not(.is-visible) { animation-play-state: paused; }
+.hp-card.is-visible       { animation-play-state: running; }
+
+.hp-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 10px 24px rgba(180,100,20,0.16);
+}
+
+/* Image side */
+.hp-card-image-wrapper {
+  flex-shrink: 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fdf0dc, #fff7ed);
+}
+.hp-card-image {
+  width: 90px;
+  height: 100%;
+  min-height: 85px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.hp-card:hover .hp-card-image { transform: scale(1.08); }
+
+/* Text side */
+.hp-card-content {
+  padding: 0.55rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.hp-card-main-info { flex-grow: 1; }
+.hp-card-title-link { text-decoration: none; color: inherit; }
+
+.hp-card-category {
+  font-family: var(--font-khmer-body, 'Kantumruy Pro', sans-serif);
+  font-size: 0.62rem;
+  color: #e8820c;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.15rem;
+  font-weight: 600;
+}
+.hp-card-title {
+  font-family: var(--font-khmer-body, 'Kantumruy Pro', sans-serif);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.8;
+  margin: 0;
+  color: #2c1a0e;
+  transition: color 0.2s;
+}
+.hp-card-title-link:hover .hp-card-title { color: #e8820c; }
+
+/* Price */
+.hp-card-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
+  border-top: 1px dashed #f0dfc0;
+}
+.hp-card-price {
+  font-family: var(--font-khmer-body, 'Kantumruy Pro', sans-serif);
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f39c12, #e8820c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Tablet ── */
+@media (min-width: 600px) {
+  .hp-card-image   { width: 120px; min-height: 100px; }
+  .hp-card-title   { font-size: 1rem; }
+  .hp-card-price   { font-size: 0.95rem; }
+  .hp-card-content { padding: 0.75rem 1rem; }
+  .label2          { flex-direction: row; gap: 1.5rem; }
+  .label2 p        { font-size: 0.88rem; }
+}
+
+/* ── Desktop: 2-col grid ── */
+@media (min-width: 900px) {
+  .list-view-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1100px;
+    gap: 1rem;
+  }
+  /* On desktop, alternate left/right per row */
+  .hp-card:nth-child(odd)  { animation-name: fadeRight; }
+  .hp-card:nth-child(even) { animation-name: fadeLeft; }
+
+  .hp-card-image   { width: 140px; min-height: 110px; }
+  .hp-card-title   { font-size: 1.05rem; }
+  .hp-card-price   { font-size: 1rem; }
+  .hp-card-content { padding: 0.9rem 1.1rem; }
+}
